@@ -19,8 +19,11 @@
 # in the current name space. If a package is not installed, it is installed and 
 # loaded. If a package is already installed then it is loaded. 
 load_ML_course_packages = function() {
-  package_list = c("ISLR", "boot", "MASS", "class", "splines", "gam", "leaps",
-                   "tree", "randomForest", "corrplot", "dendextend", "clue")
+    package_list <- c(
+    "ISLR", "boot", "MASS", "class", "splines", "gam", "leaps",
+    "tree", "randomForest", "corrplot", "dendextend", "clue",
+    "glmnet", "pls", "e1071"
+  )
   for (pkg in package_list) {
     if (!requireNamespace(pkg, quietly = TRUE)) {
       install.packages(pkg)
