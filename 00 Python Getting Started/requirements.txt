@@ -1,0 +1,13 @@
+ISLP
+matplotlib
+numpy
+pandas
+patsy
+pygam
+scikit-learn
+scipy
+statsmodels
+torch
+torchinfo
+torchvision
+
